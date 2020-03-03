@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap Template</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <style>
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+.noHover{
+  pointer-events: none;
+}
+
+a:hover{
+  color: #000000;
+}
+
+.navbar{
+  background-color: #346936;
+}
+
+.navbar ul li{
+  margin-right: 2rem;
+}
+
+.navbar ul li a{
+  font-size: 1.5em;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+
+.bg-irl {
+  /* The image used */
+  background-image: url("img/ireland.png");
+
+  /* Half height */
+  height: 400px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg {
+  /* The image used */
+  background-image: url("img/grass.jpg");
+
+  /* Half height */
+  height: 400px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Centered text */
+.left-centered {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a{
+  color:#000000;
+}
+.card-img-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.card-body-text{
+  padding-top:1.5rem;
+}
+
+.container-2{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.img-fluid-2{
+    width:100%;
+    height: 400px;
+}
+
+.teal .accent-3 {
+    background-color: #346934 !important;
+}
+
+.figure-gen{
+
+  width: auto; 
+  height: 400px;
+
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+  .img-fluid-2{
+    width:100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 30px;;
+  }
+
+  h4{
+    font-size: 15px;
+  }
+
+
+  .display-4{
+    font-size: 2.5rem;
+  }
+
+  .figure-gen{
+
+    height: 200px;
+  }
+
+  .top-body{
+
+    padding-top: 120px;
+  }
+
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+
+  h4{
+    font-size: 15px;
+  }
+
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+     background: #346936!important;
+  }
+}
+/* Navbar animation */
+
+
+.top-nav-collapse {
+  background-color: #346936; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #346936; } }
+
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #346936; }
+
+
+  .gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+
+#team {
+    background: #ffffff !important;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-img-100 {
+    width: 100px;
+    height: 100px;
+}
+
+.figure-gen{
+
+width: 100%; 
+height: 400px;
+
+}
+
+
+#team .card {
+    border: none;
+
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    width:100%;
+    height: 400px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body figure {
+    width: 100%;
+    height: 400px;
+    border-radius: 50%;
+}
+</style>
+
+  </style>
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+ <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand mr-5" href="#">
+        <img src="img/LFi.png" height="80" alt="mdb logo">
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Longfields
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about-us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our-products.html" >Our products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html" >Contact us</a>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+
+  <!--Main Layout-->
+  <main>
+    <!-- Team -->
+    <section id="team" class="pb-5" style="padding-top: 120px;">
+      <div class="px-5 pt-5">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row text-center">
+                <!-- Team member -->
+                <div class="col-md-4 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body" style="background-color:#DB9600;">
+                                    <div class="centered">
+                                      <h1 class="text-white"><strong>GLOBAL MEATS</strong></h1>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card" style="background-color:#DB9600;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">WE ARE BASED IN SPAIN WE SUPPLY BEEF, PORK AND LAMB TO THE SPANISH MARKET OVER 20 YEARS OF EXPERIENCE.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-4 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                            <div class="card">
+                              <div class="card-body d-flex " style="background-color:#346936;">
+                                <div class="row align-items-center justify-content-center">
+                                  <div class="col-md-4">
+
+                                      <img class="img-fluid" src="img/LFi.png" alt="longfields logo">
+
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="mx-auto">
+                                      <h1 class="text-white"><strong>OUR BRAND</strong></h1>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#346936;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">IT ENCOMPASSES PRODUCT FROM IRELAND, NORTHERN IRELAND AND ENGLAND GRASS FED BEST IRISH MEAT IN THE SPANISH MARKET</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-4 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body" style="background-color:#6DA53B;">
+                                    <div class="centered">
+                                      <h1 class="text-white"><strong>OUR MISSION</strong></h1>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#6DA53B;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">TO PROVIDE MEAT PRODUCTS OF REFERENCE, OFFERING EFFECTIVE SOLUTIONS FOR SMALL AND LARGE MERCHANTS, FOLLOWING CRITERIA OF PRODUCT QUALITY, DELIVERY TIMES AND PRICE.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row text-center">
+                <!-- Team member -->
+                <div class="col-md-5 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body" style="background-color:#6DA53B;">
+                                    <div class="centered">
+                                      <h1 class="text-white"><strong>OUR COMMITMENT WITH THE ENVIRONMENT</strong></h1>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card" style="background-color:#6DA53B;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">ALL OUR PRODUCTS ARE TRANSPORTED IN IFCO BOXES. DESIGN ENSURES THE BEST POSSIBLE TEMPERATURE CONTROL, MAINTAINING MEAT FRESHNESS AND QUALITY. REDUCING PRODUCT DAMAGE, MEANING LESS FOOD WASTE AND A HIGHER QUALITY OF PRODUCT.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-4 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                            <div class="card">
+                              <div class="card-body" style="background-color:#DB9600;">
+                                <div class="centered">
+                                  <h1 class="text-white"><strong>ORIGIN GREEN</strong></h1>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#DB9600;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">LED BY BORD BIA THIS PROGRAM ENABLES IRELAND’S FOOD INDUSTRY TO SET AND ACHIEVE MEASURABLE SUSTAINABILITY TARGETS THAT RESPECT THE ENVIRONMENT AND SERVE LOCAL COMMUNITIES MORE EFFECTIVELY.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-3 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body" style="background-color:#C4C4C4;">
+                                    <div class="centered">
+                                      <h1 class="text-white"><strong>QUALITY</strong></h>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#C4C4C4;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">WITH THIS QUALITY STAMP BORD BIA WANTS CUSTOMERS AROUND THE GLOBE TO RECOGNIZE THAT IRISH FOOD AND DRINK IS WORLD CLASS; THAT IT IS HIGH QUALITY, DISTINCTIVE AND UNIQUE.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row text-center">
+                <!-- Team member -->
+                <div class="col-md-4 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                <div class="card">
+                                  <div class="bg"></div>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card" style="background-color:#346936;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">100% GRASS FED ANIMALS</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-5 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                            <div class="card">
+                              <div class="card-body" style="background-color:#C4C4C4;">
+                                <div class="centered">
+                                  <h1 class="text-white"><strong>OUR VISION</strong></h1>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#C4C4C4;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">OUR MISSION IS TO BE A LEADING AND GROWING COMPANY, 
+                                      WITH A NATIONAL PRESENCE AND GLOBAL BUSINESS, THAT DISTINGUISHES ITSELF 
+                                      BY PROVIDING EXCELLENT SERVICE TO ITS CUSTOMERS, BASED ON OPTIMAL QUALITY 
+                                      OF TIME AND AIMED AT EXPANDING OPPORTUNITIES FOR PROFESSIONAL AND PERSONAL 
+                                      DEVELOPMENT FOR OUR EMPLOYEES.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-md-3 text-center">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                <div class="bg-irl"></div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card d-flex" style="background-color:#346936;">
+                                  <div class="card-body align-items-center d-flex justify-content-center">
+                                    <h4 class="text-white">WITH THIS QUALITY STAMP BORD BIA WANTS CUSTOMERS AROUND THE GLOBE TO RECOGNIZE THAT IRISH FOOD AND DRINK IS WORLD CLASS; THAT IT IS HIGH QUALITY, DISTINCTIVE AND UNIQUE.</h4>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <!-- ./Team member -->
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Team -->
+  </main>
+  <!--Main Layout-->
+
+  <!--Footer-->
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5 pt-3">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Longfields</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>All the meat selected to carry this logo is primarily grass meat bathed by the Atlantic breezes that gives it a unique texture and bouquet.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Longfields</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Black Angus</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Hereford</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Calle Carretera de Galapagar 37 1A, Torrelodones, 28250 Madrid</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> global@globalmeats.es</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 34 918 518 492</p>
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="https://longfields.es/"> Longfields.es</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!--/.Footer-->
+
+
+  <!--  SCRIPTS  -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      new WOW().init();
+    });
+
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+
+  </script>
+</body>
+
+</html>

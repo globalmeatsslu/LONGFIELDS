@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="full-height">
+
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap Template</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <style>
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+.noHover{
+  pointer-events: none;
+}
+
+a:hover{
+  color: #000000;
+}
+
+.navbar{
+  background-color: #346936;
+}
+
+.navbar ul li{
+  margin-right: 2rem;
+}
+
+.navbar ul li a{
+  font-size: 1.5em;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Centered text */
+.left-centered {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+a{
+  color:#000000;
+}
+.card-img-200 {
+    width: 200px;
+    height: 200px;
+}
+
+.card-body-text{
+  padding-top:1.5rem;
+}
+
+.container-2{
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.img-fluid-2{
+    width:100%;
+    height: 400px;
+}
+
+.teal.accent-3 {
+    background-color: #346934 !important;
+}
+
+.figure-gen{
+
+  width: auto; 
+  height: 400px;
+
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+  .img-fluid-2{
+    width:100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  .display-4{
+    font-size: 2.5rem;
+  }
+
+  .figure-gen{
+
+    height: 200px;
+  }
+
+
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+     background: #346936!important;
+  }
+}
+/* Navbar animation */
+.navbar {
+  background-color:transparent }
+
+.top-nav-collapse {
+  background-color: #346936; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #346936; } }
+
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #346936; }
+
+
+  .gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1); }
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+
+  </style>
+</head>
+
+<body>
+
+ <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand mr-5" href="#">
+        <img src="img/LFi.png" height="80" alt="mdb logo">
+      </a>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Longfields
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="our-products.html" >Our products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact-us.html" >Contact us</a>
+          </li>
+        </ul>
+
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('img/jumbo.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+
+      <div class="container my-5">
+
+
+        <!--Section: Content-->
+        <section class="dark-grey-text">
+      
+          <!--Grid row-->
+          <div class="row wow fadeIn mt-5 pt-5">
+
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center">
+
+              <h1 class="display-4 font-weight-bold">GLOBAL MEATS</h1>
+
+              <hr class="hr-light">
+
+              <h2 class="mb-4 d-md-block">
+                <strong>Company specializing in the trading of beef, lamb and pork product to and from Spain.</strong>
+              </h2>
+
+            </div>
+            <!--Grid column-->
+
+
+          </div>
+          <!--Grid row-->
+
+          <!--First row-->
+          <div class="row">
+      
+            <!--First column-->
+            <div class="col-md-6 mb-4">
+      
+              <!-- Card -->
+              <a href="#!" class="card hoverable">
+                
+                <!-- Card content -->
+                <div class="card-body">
+      
+                  <div class="media">
+                    <span class="card-img-200 d-inline-flex justify-content-center align-items-center lighten-3 mr-4">
+                      <img class="img-fluid" src="img/LFi.png" alt="mdb logo">
+                    </span>
+                    <div class="media-body card-body-text">
+                      <h4 class="mb-3">LONGFIELDS</h4>
+                      <p class="mb-0">Our registered trademark. More than 20 years supplying the Spanish meat market.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+      
+              </a>
+              <!-- Card -->
+      
+            </div>
+            <!--First column-->
+      
+            <!--First column-->
+            <div class="col-md-6 mb-4">
+      
+              <!-- Card -->
+              <a href="#!" class="card hoverable">
+                
+                <!-- Card content -->
+                <div class="card-body">
+      
+                  <div class="media">
+                    <div class="media-body card-body-text mr-4">
+                      <h4 class="mb-3">PRODUCTS</h4>
+                      <p class="mb-0">BEEF, LAMB and PORK originating from the Republic of Ireland.</p>
+                    </div>
+                    <span class="card-img-200 d-inline-flex justify-content-center align-items-center lighten-3 mr-2">
+                      <img class="img-fluid" src="img/ireland-jumbo.png"alt="mdb logo">
+                    </span>
+                  </div>
+                  
+                </div>
+      
+              </a>
+              <!-- Card -->
+      
+            </div>
+            <!--First column-->
+      
+          </div>
+          <!--First row-->
+    
+        </section>
+        
+        
+      </div>
+
+
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+
+
+  <!--Main layout-->
+  <main>
+    <div class="px-5 py-4">
+      <div class="row">
+        <div class="col-md-12">
+      
+          <div id="mdb-lightbox-ui"></div>
+      
+          <div class="mdb-lightbox">
+      
+            <div class="row">
+              <div class="col-md-3 pr-3">
+        
+                <figure>
+                    <img alt="picture" src="img/grass.jpg" class="img-fluid-2 noHover" />
+                </figure>
+                <div class="bottom-right" style="width: 60%;">
+                  <h1 class="text-white "><strong>GRASS FED BEEF AND LAMB</strong></h1>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 pr-3">
+        
+                <figure>
+                    <img alt="picture" src="img/vaca2-jumbo.jpg" class="img-fluid-2 noHover"/>
+                </figure>
+
+                <div class="top-right">
+                  <h1 class="text-white "><strong>TRACEABILITY<br/> ASSURED</strong></h1>
+                </div>
+
+              </div>
+
+              <div class="col-md-3 pr-3">
+        
+                <figure">
+                    <div class="figure-gen" style="background-color:#346936;"></div>
+                </figure>
+                <div class="top-left">
+                  <h1 class="text-white"><strong>SPAIN<br/>ITALY<br/>FRANCE<br/>POLAND<br/>MEXICO</strong></h1>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 pr-3">
+
+                <figure">
+                    <div class="figure-gen" style="background-color:#DB9600;"></div>
+                </figure>
+                <div class="centered">
+                  <h1 class="text-white"><strong>QUALITY AND SUSTAINABILITY AT YOUR DISPOSAL</strong></h1>
+                </div>
+
+              </div>
+
+              <div class="col-md-3 pr-3">
+        
+                <figure">
+                    <div class="figure-gen" style="background-color:#6DA53B;"></div>
+                </figure>
+                <div class="centered">
+                  <h1 class="text-white"><strong>KILL OF 20 THOUSAND CATTLE PER WEEK</strong></h1>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 pr-3">
+        
+                <figure>
+                    <img alt="picture" src="img/product-jumbo.png" class="img-fluid-2 noHover" />
+                </figure>
+                <div class="bottom-right" style="width: 60%;">
+                  <h1 class="text-white "><strong>OUR PRODUCTS</strong></h1>
+                </div>
+
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+<!-- Footer -->
+<footer class="page-footer font-small blue-grey lighten-5 pt-3">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Longfields</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>All the meat selected to carry this logo is primarily grass meat bathed by the Atlantic breezes that gives it a unique texture and bouquet.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="#!">Longfields</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Black Angus</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="#!">Hereford</a>
+        </p>
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Calle Carretera de Galapagar 37 1A, Torrelodones, 28250 Madrid</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> global@globalmeats.es</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 34 918 518 492</p>
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="https://longfields.es/"> Longfields.es</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  <!--/.Footer-->
+
+
+  <!--  SCRIPTS  -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      new WOW().init();
+    });
+
+    // MDB Lightbox Init
+    $(function () {
+      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    });
+
+  </script>
+</body>
+
+</html>
