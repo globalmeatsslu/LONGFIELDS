@@ -1,323 +1,347 @@
-<!DOCTYPE html>
-<html lang="en" class="full-height">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <!-- Required meta tags always come first -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>LONGFIELDS</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="assets/ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="assets/ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="assets/ico/favicon-16x16.png">
+	<link rel="manifest" href="assets/ico/manifest.json">
+	<link rel="mask-icon" href="assets/ico/safari-pinned-tab.svg"
+		color="#5bbad5">
+	<link rel="shortcut icon" href="assets/ico/favicon.ico">
+	<meta name="msapplication-config" content="assets/ico/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 
-  <!-- Style -->
-  <link href="css/style.css" rel="stylesheet">
+	<title>Touché - Café & Restaurant Template</title>
+
+	<!-- CSS Plugins -->
+	<link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
+	<link rel="stylesheet" href="assets/plugins/lightbox/css/lightbox.min.css">
+	<link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
+
+	<!-- CSS Global -->
+	<link rel="stylesheet" href="assets/css/theme.min.css">
+
+	<!-- Fontawesome script -->
+	<script src="https://kit.fontawesome.com/6bbd5075ba.js"
+		crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-  <!--Main Navigation-->
- <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
+	<!-- NAVBAR
+	================================================== -->
+	<nav class="navbar navbar-light navbar-expand-lg fixed-top">
+		<div class="container">
 
-      <!-- Brand -->
-      <a class="navbar-brand mr-5" href="index.html">
-        <img src="img/LFi.png" height="80" alt="longfields logo">
-      </a>
+			<!-- Navbar: Brand -->
+			<a class="navbar-brand navbar-brand_2 d-lg-none"
+				href="index.html">Touché</a>
 
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+			<!-- Navbar: Toggler -->
+			<button class="navbar-toggler navbar-toggler-right" type="button"
+				data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<!-- Navbar: Collapse -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html">Longfields
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="about-us.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="our-products.html" >Our products</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact-us.html" >Contact us</a>
-          </li>
-        </ul>
+				<!-- Navbar navigation: Left -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="about-us.html">About Us</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle"
+							href="http://example.com" id="nav-item__menu"
+							data-toggle="dropdown" aria-haspopup="true"
+							aria-expanded="false">
+							Menu
+						</a>
+						<div class="dropdown-menu"
+							aria-labelledby="nav-item__menu">
+							<a class="dropdown-item" href="menu.html">Menu:
+								Standard</a>
+							<a class="dropdown-item"
+								href="menu_no-images.html">Menu: No Images</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="reservation.html">Reservation</a>
+					</li>
+				</ul>
 
+				<!-- Brand name -->
+				<a class="navbar-brand navbar-brand_2 d-none d-lg-flex"
+					href="index.html">
+					Touché
+				</a>
 
-      </div>
+				<!-- Navbar navigation: Right -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="news-and-events.html">News &
+							Events</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="gallery.html">Gallery</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="contact-us.html">Contact</a>
+					</li>
+				</ul>
 
-    </div>
-  </nav>
-  <!-- Navbar -->
+			</div> <!-- / .navbar-collapse -->
 
+		</div> <!-- / .container -->
+	</nav> <!-- / .navbar -->
 
-  <!--Main Layout-->
-  <main>
-    <div class="container mb-5" style="padding-top: 120px;">
+	<!-- HEADER
+	================================================== -->
+	<section class="section section_header" data-parallax="scroll"
+		data-image-src="assets/img/37.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col">
 
-      <!-- Section: Contact v.3 -->
-      <section class="contact-section my-5">
-    
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"> 
+					<!-- Heading -->
+					<h1
+						class="section__heading section_header__heading text-center">
+						Contact Us
+					</h1>
 
-        <p class="hidden" hidden>
-          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-        </p>
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
 
-        <!-- Form with header -->
-        <div class="card">
-    
-          <!-- Grid row -->
-          <div class="row">
-    
-            <!-- Grid column -->
-            <div class="col-lg-8">
-    
-              <div class="card-body form">
-    
-                <!-- Header -->
-                <h3 class="mt-4 text-color"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
-    
-                <!-- Grid row -->
-                <div class="row">
-    
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="form-contact-name" name="name" class="form-control" required>
-                      <label for="form-contact-name" class="">Your name</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
-    
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="email" id="form-contact-email" name= "email" class="form-control" required>
-                      <label for="form-contact-email" class="">Your email</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
-    
-                </div>
-                <!-- Grid row -->
-    
-                <!-- Grid row -->
-                <div class="row">
-    
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="form-contact-phone" name="phone" class="form-control" required>
-                      <label for="form-contact-phone" class="">Your phone</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
-    
-                  <!-- Grid column -->
-                  <div class="col-md-6">
-                    <div class="md-form mb-0">
-                      <input type="text" id="form-contact-company" name="company" class="form-control" required>
-                      <label for="form-contact-company" class="">Your company</label>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
-    
-                </div>
-                <!-- Grid row -->
-    
-                <!-- Grid row -->
-                <div class="row">
-    
-                  <!-- Grid column -->
-                  <div class="col-md-12">
-                    <div class="md-form mb-0">
-                      <textarea id="form-contact-message" class="form-control md-textarea" name="message" rows="3" required></textarea>
-                      <label for="form-contact-message">Your message</label>
-                        <div class="container">
-                          <button class="btn send-button btn-block my-4 text-white" type="submit">Send</button>
-                        </div>
-                    </div>
-                  </div>
-                  <!-- Grid column -->
-    
-                </div>
-                <!-- Grid row -->
-    
-              </div>
-    
-            </div>
-            <!-- Grid column -->
-    
-            <!-- Grid column -->
-            <div class="col-lg-4">
-    
-              <div class="card-body contact text-center h-100 white-text">
-    
-                <h3 class="my-4 pb-2">Contact information</h3>
-                <ul class="text-lg-left list-unstyled ml-4">
-                  <li>
-                    <p><i class="text-white fas fa-map-marker-alt pr-2"></i>Calle Carretera de Galapagar, 37 1A, Torrelodones, 28250 Madrid</p>
-                  </li>
-                  <li>
-                    <p><i class="text-white fas fa-phone pr-2"></i>+ 34 918 518 492</p>
-                  </li>
-                  <li>
-                    <p><i class="text-white fas fa-envelope pr-2"></i>global@globalmeats.es</p>
-                  </li>
-                </ul>
-                <hr class="hr-light my-4">
-                <ul class="list-inline text-center list-unstyled">
-                  <li class="list-inline-item">
-                    <a class="p-2 fa-lg tw-ic">
-                      <i class="text-white fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="p-2 fa-lg li-ic">
-                      <i class="text-white fab fa-linkedin-in"> </i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="p-2 fa-lg ins-ic">
-                      <i class="text-white fab fa-instagram"> </i>
-                    </a>
-                  </li>
-                </ul>
-    
-              </div>
-    
-            </div>
-            <!-- Grid column -->
-    
-          </div>
-          <!-- Grid row -->
-    
-        </div>
-        <!-- Form with header -->
+	<!-- CONTACT
+	================================================== -->
+	<section class="section section_contact">
+		<div class="container">
+			<div class="row">
+				<div class="col">
 
-      </form>
-      </section>
-      <!-- Section: Contact v.3 -->
-    </div>
-  </main>
-  <!--Main Layout-->
+					<!-- Heading -->
+					<h2 class="section__heading text-center">
+						Get in touch with us
+					</h2>
 
-  <!--Footer-->
-<!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5 pt-3">
+					<!-- Subheading -->
+					<p class="section__subheading text-center">
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Quisquam illo praesentium sequi in cum, beatae
+						maiores quae qui.
+					</p>
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5">
+				</div>
+			</div> <!-- / .row -->
+			<div class="row">
+				<div class="col-md-3 order-md-2">
 
-    <!-- Grid row -->
-    <div class="row mt-3 dark-grey-text">
+					<!-- Contact info -->
+					<div class="section_contact__info">
+						<div class="section_contact__info__item">
+							<h4 class="section_contact__info__item__heading">
+								Write us
+							</h4>
+							<p class="section_contact__info__item__content">
+								<a
+									href="mailto:admin@domain.com">global@globalmeats.es</a>
+							</p>
+						</div>
+						<div class="section_contact__info__item">
+							<h4 class="section_contact__info__item__heading">
+								Call us
+							</h4>
+							<p class="section_contact__info__item__content">
+								<a href="tel:+19876543210">+43 918 518 492</a>
+							</p>
+						</div>
+						<div class="section_contact__info__item">
+							<h4 class="section_contact__info__item__heading">
+								Visit us
+							</h4>
+							<p class="section_contact__info__item__content">
+								Calle Carretera de Galapagar 37, 1A, 28250,
+								Torrelodones, Madrid (Spain)
+							</p>
+						</div>
+						<div class="section_contact__info__item">
+							<h4 class="section_contact__info__item__heading">
+								Social links
+							</h4>
+							<ul
+								class="section_contact__info__item__content social">
+								<li><i class="fab fa-facebook-f fa-xs"></i></li>
+								<li><i class="fab fa-instagram fa-sm"></i></li>
+								<li><i class="fab fa-linkedin-in fa-sm"></i>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+				</div>
+				<div class="col-md-9 order-md-1">
 
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold">Longfields</h6>
-        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>All the meat selected to carry this logo is primarily grass meat bathed by the Atlantic breezes that gives it a unique texture and bouquet.</p>
+					<!-- Contact form -->
+					<form class="section_contact__form" id="contact__form">
+						<div class="form-group">
+							<label for="contact__form__name"
+								class="sr-only">Full name</label>
+							<input type="text" class="form-control"
+								id="contact__form__name"
+								name="contact__form__name"
+								placeholder="Full name">
+							<div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="contact__form__email"
+								class="sr-only">E-mail address</label>
+							<input type="email" class="form-control"
+								id="contact__form__email"
+								name="contact__form__email"
+								placeholder="E-mail address">
+							<div class="invalid-feedback"></div>
+						</div>
+						<div class="form-group">
+							<label for="contact__form__email"
+								class="sr-only">Message</label>
+							<textarea class="form-control"
+								id="contact__form__message"
+								name="contact__form__message" rows="9"
+								placeholder="Message"></textarea>
+							<div class="invalid-feedback"></div>
+						</div>
+						<button type="submit" class="btn btn-primary">
+							Send message
+						</button>
+					</form>
 
-      </div>
-      <!-- Grid column -->
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</section>
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-xl-4 mb-4">
+	<!-- MAP
+	================================================== -->
+	<section class="section section_map">
+		<div class="section_map__map" data-lat="40.7590403"
+			data-lng="-74.0392713" data-zoom="12"
+			data-info="<h4 class='section_map__map__heading text-center'>Touche restaurant</h4><p class='section_map__map__content text-center text-muted'>1234 Altschul, New York, NY 10027-0000<br>+1 987 654 3210</p>">
+		</div>
+	</section>
 
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
-        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a class="dark-grey-text" href="#!">Longfields</a>
-        </p>
-        <p>
-          <a class="dark-grey-text" href="#!">Black Angus</a>
-        </p>
-        <p>
-          <a class="dark-grey-text" href="#!">Hereford</a>
-        </p>
+	<!-- FOOTER
+	================================================== -->
+	<footer class="section section_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
 
+					<!-- About Us -->
+					<h5 class="section_footer__heading">
+						About Us
+					</h5>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit. Corrupti dolorum, sint corporis nostrum, possimus
+						unde eos vitae eius quasi saepe.
+					</p>
 
-      </div>
-      <!-- Grid column -->
+				</div>
+				<div class="col-sm-4">
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+					<!-- Contact info -->
+					<h5 class="section_footer__heading">
+						Contact info
+					</h5>
+					<ul class="section_footer__info">
+						<li>
+							<i class="fas fa-map-marker-alt"></i> Calle
+							Carretera de Galapagar 37 1A, Torrelodones, Madrid
+							(Spain)
+						</li>
+						<li>
+							<i class="fas fa-phone"></i> +34 918 518 492
+						</li>
+						<li>
+							<i class="far fa-envelope"></i> <a
+								href="mailto:global@globalmeats.es">global@globalmeats.es</a>
+						</li>
+					</ul>
 
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fas fa-home mr-3"></i> Calle Carretera de Galapagar 37 1A, Torrelodones, 28250 Madrid</p>
-        <p>
-          <i class="fas fa-envelope mr-3"></i> global@globalmeats.es</p>
-        <p>
-          <i class="fas fa-phone mr-3"></i> + 34 918 518 492</p>
+				</div>
+				<div class="col-sm-4">
 
+					<!-- Opening hours -->
+					<h5 class="section_footer__heading">
+						Opening hours
+					</h5>
+					<div class="section_footer__open">
+						<div class="section_footer__open__days">Monday -
+							Thursday</div>
+						<div class="section_footer__open__time">10:00 AM - 11:00
+							PM</div>
+					</div>
+					<div class="section_footer__open">
+						<div class="section_footer__open__days">Friday - Sunday
+						</div>
+						<div class="section_footer__open__time">12:00 AM - 03:00
+							AM</div>
+					</div>
 
-      </div>
-      <!-- Grid column -->
+				</div>
+			</div> <!-- / .row -->
+			<div class="row">
+				<div class="col-12">
 
-    </div>
-    <!-- Grid row -->
+					<!-- Copyright -->
+					<div class="section_footer__copyright">
+						&copy; <span id="js-current-year"></span> Touché. All
+						rights reserved.
+					</div>
 
-  </div>
-  <!-- Footer Links -->
+				</div>
+			</div> <!-- / .row -->
+		</div> <!-- / .container -->
+	</footer>
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
-    <a class="dark-grey-text" href="https://longfields.es/"> Longfields.es</a>
-  </div>
-  <!-- Copyright -->
+	<!-- JAVASCRIPT
+	================================================== -->
 
-</footer>
-<!-- Footer -->
-  <!--/.Footer-->
+	<!-- JS Global -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnKt8_N4-FKOnhI_pSaDL7g_g-XI1-R9E"></script>
 
+	<!-- JS Plugins -->
+	<script src="assets/plugins/parallax/parallax.min.js"></script>
+	<script src="assets/plugins/isotope/lib/imagesloaded.pkgd.min.js"></script>
+	<script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+	<script src="assets/plugins/flickity/flickity.pkgd.min.js"></script>
+	<script src="assets/plugins/lightbox/js/lightbox.min.js"></script>
+	<script src="assets/plugins/reservation/reservation.js"></script>
+	<script src="assets/plugins/contact/contact.js"></script>
+	<script src="assets/plugins/alerts/alerts.js"></script>
 
-  <!--  SCRIPTS  -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script>
-    $(document).ready(() => {
-      new WOW().init();
-    });
+	<!-- JS Custom -->
+	<script src="assets/js/theme.min.js"></script>
+	<script src="assets/js/custom.js"></script>
 
-    // MDB Lightbox Init
-    $(function () {
-      $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-    });
-
-  </script>
 </body>
 
 </html>
-
-
-
-
-
-
