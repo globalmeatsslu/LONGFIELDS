@@ -44,6 +44,10 @@
     box-sizing: border-box
 }
 
+.box{
+    border:1px solid red;
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -4582,7 +4586,7 @@ input[type=submit].btn-block {
 
 .card-img-overlay {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     right: 0;
     bottom: 0;
     left: 0;
@@ -6559,7 +6563,7 @@ button.bg-dark:hover {
 }
 
 .border-secondary {
-    border-color: #6c757d !important
+    border-color: var(--primary) !important
 }
 
 .border-success {
@@ -11282,4 +11286,11 @@ body {
     content: "";
     vertical-align: middle;
     border-top: 1px solid #fff;
+}
+
+
+/* serach product */
+.search-product-categories .list-group-item:hover {
+    color: var(--primary);
+
 }
