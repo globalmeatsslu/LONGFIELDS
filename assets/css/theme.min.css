@@ -10918,14 +10918,14 @@ body {
         background-image: url(../../assets/img/main/main_480.jpg);
     } 
 }
-@media (min-width:724px) {
+@media (min-width:688px) {
     #welcome {
-        background-image: url(../../assets/img/main/main_724.jpg);
+        background-image: url(../../assets/img/main/main_688.jpg);
     } 
 }
-@media (min-width:992px) {
+@media (min-width:913px) {
     #welcome {
-        background-image: url(../../assets/img/main/main_1021.jpg);
+        background-image: url(../../assets/img/main/main_913.jpg);
     } 
 }
 
@@ -10934,8 +10934,6 @@ body {
         background-image: url(../../assets/img/main/main_1480.jpg);
     } 
 }
-
-
 
 
 @media (min-width:768px) {
