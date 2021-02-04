@@ -67,6 +67,7 @@ section {
     display: block
 }
 
+
 body {
     font-family: Lato, sans-serif;
     font-size: 1rem;
@@ -10902,6 +10903,40 @@ body {
 .section {
     padding: 3rem 0
 }
+
+/* WELCOME BACKGROUND IMAGE */
+
+#welcome {
+    background-image: url(../../assets/img/main/main_1480.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media (min-width:400px) {
+    #welcome {
+        background-image: url(../../assets/img/main/main_480.jpg);
+    } 
+}
+@media (min-width:724px) {
+    #welcome {
+        background-image: url(../../assets/img/main/main_724.jpg);
+    } 
+}
+@media (min-width:992px) {
+    #welcome {
+        background-image: url(../../assets/img/main/main_1021.jpg);
+    } 
+}
+
+@media (min-width:1200px) {
+    #welcome {
+        background-image: url(../../assets/img/main/main_1480.jpg);
+    } 
+}
+
+
+
 
 @media (min-width:768px) {
     .section {
